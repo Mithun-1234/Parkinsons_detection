@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predict Parkinson's Disease Stage</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Predict Parkinson's Disease Stage</h1>
+	<form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+  <input type="file" name="video">
+  <button type="submit" value="predict">Submit</button>
+</form>
+</body>
+</html>
